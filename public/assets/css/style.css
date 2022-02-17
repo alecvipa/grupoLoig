@@ -1,0 +1,35 @@
+.fonts{
+    font-family: 'Signika', sans-serif;
+}
+.somosTitles{
+    margin-top: 7%;
+}
+.overlaySomosImage{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.548);
+    padding-top: 5%;
+}
+.imageSomos{ 
+    height: 26rem;
+    background-image: url("/assets/images/working.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pointer {cursor: pointer;}
+.calidadDiv{
+    height: 20rem;
+    background-image: url("/assets/images/tubos.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media(max-width:991px){
+    .calidadDiv{
+        height: 23rem;
+    }
+    .expoCalidad{
+        font-size: 19px !important;
+    }
+}
