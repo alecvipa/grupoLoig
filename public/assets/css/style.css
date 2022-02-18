@@ -7,12 +7,12 @@
 .overlaySomosImage{
     height: 100%;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.548);
+    background-color: rgba(0, 0, 0, 0.288);
     padding-top: 5%;
 }
 .imageSomos{ 
     height: 26rem;
-    background-image: url("/assets/images/working.jpeg");
+    background-image: url("/assets/images/building.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -24,6 +24,42 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+}
+.contactoImg{
+    height: 20rem;
+    background-image: url("/assets/images/whiteTexture.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.titleContacto{
+    padding-top: 10%;
+    font-size: 4rem;
+}
+.overlayImgSomos{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.521);
+}
+.expertosTitle{
+    margin-top: 40%;
+    text-shadow: 2px 2px #2f2d2d;
+}
+#footer-wrap{
+    margin-top: 5%;
+    background-color: #2f2d2d !important;
+    color: white;
+}
+.right-footer{
+    margin-top: 7%;
+}
+
+@media(min-width:992px){
+    .contactoForm{
+        margin-top: 3%;
+    }
 }
 @media(max-width:991px){
     .calidadDiv{
@@ -31,5 +67,15 @@
     }
     .expoCalidad{
         font-size: 19px !important;
+    }
+    .imgLogoFooter{
+        margin-left: 20%;
+        margin-bottom: -24%;
+    }
+    .nuestroTrabajoTitle{
+        margin-top: 20%;
+    }
+    .titleContacto{
+        padding-top: 30%;
     }
 }

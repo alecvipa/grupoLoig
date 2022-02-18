@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
-    <script src="https://kit.fontawesome.com/a077a0470e.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/28f081bff3.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <link rel="shortcut icon" href="assets/images/coktail.jpg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,7 +44,7 @@
             };
             obj.open("post", form.action, true);
             obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
-            obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, number: form.number.value, message: form.message.value }));
+            obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, number: form.number.value }));
             alert("¡En breve te contactaremos!");
             $(".formInput").val(" ");
             return false;
@@ -85,21 +85,20 @@
             {{{body}}}
         </div>
         {{!-- FOOTER STARTS --}}
-        <div id="footer-wrap" class="is-clearfix paraFont"
-            style="border-top: 1px solid #f3f3f3; padding: 60px 0 60px; background-color: white">
+        <div id="footer-wrap" class="is-clearfix paraFont">
             <footer id="footer" class="site-footer">
                 <div id="footer-inner" class="site-footer-inner container">
                     <div class="row text-center">
-                        <div class="col-md-8" style="display: flex; flex-wrap: wrap">
+                        <div class="col-md-6" style="display: flex; flex-wrap: wrap">
                             <div class="align-logo-footer" style="display: inline-block">
                                 <a href="/">
-                                    <img src="assets/images/logoZincel2.png"
+                                    <img src="assets/images/logoBlanco.png"
                                         style="width: 243px; height: auto; margin-top: 0%" alt="" class="imgLogoFooter">
                                 </a>
                             </div>
                         </div>
 
-                        <div class="col-md-4 right-footer">
+                        <div class="col-md-6 right-footer">
                             <br>
 
                             {{!-- <a href="#" target="_blank">
@@ -118,11 +117,10 @@
                                 </span>
                             </a> --}}
 
-                            <p><b><span style="color: #5d5c5c;">Grupo Loig S.A de C.V.</span></b> Todos los
+                            <p><b><span style="color: #cecece;">© Copyright Grupo Loig S.A de C.V.</span></b> Todos los
                                 derechos reservados. Sus
                                 datos están protegidos por
-                                la ley de privacidad. <span><a href="/privacidad" style="color: #5d5c5c;">Visita nuestra
-                                        política de privacidad</a></span></p>
+                                la ley de privacidad. <button type="button" class="btn btn-link" style="color: whitesmoke;">Política de privacidad</button></p>
 
 
                         </div>

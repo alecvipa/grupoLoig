@@ -31,6 +31,7 @@
             </a>
         </div>
     </div>
+
     <div class="bienvenidaDiv">
         <div class="container text-justify">
             <div class="row">
@@ -52,7 +53,7 @@
                     </ul>
                 </div>
                 <div class="col-md-8 somosTitles">
-
+                    <h3>NOSOTROS</h3>
                     <h4>
                         <span class="text-primary">Somos una constructora 100% mexicana</span>, hemos construido grandes
                         proyectos en todo el
@@ -72,19 +73,23 @@
                         clientes.
                     </p>
                     <div class="imageSomos pointer" onclick="location.href='#contacto';">
-                        <div>
+                        <div class="overlayImgSomos">
                             <div class="container text-center">
                                 <div class="row">
-                                    <div class="col-md-12">
-
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <h2 class="text-white expertosTitle">Expertos de la construcción de grandes
+                                            proyectos</h2>
                                     </div>
+                                    <div class="col-md-2"></div>
                                 </div>
                             </div>
                         </div>
 
 
                     </div>
-                    <button type="button" class="btn btn-dark btn-block" onclick="location.href='#contacto';">Cotiza con
+                    <button type="button" class="btn btn-lg btn-dark btn-block"
+                        onclick="location.href='#contacto';">Cotiza con
                         nosotros</button>
                 </div>
             </div>
@@ -101,6 +106,132 @@
                     construcciones. Para lograr esto contamos con un equipo de expertos responsables del control
                     presupuestas y calidad continua.
                 </h4>
+            </div>
+        </div>
+    </div> <br>
+    <div class="servicios" id="servicios">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <h3>SERVICIOS</h3>
+                </div>
+                <div class="col-md-4"></div>
+            </div> <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <h1><i class="fa-solid fa-helmet-safety"></i></h1>
+                    <h4>Construcción de bienes habitacionales, comerciales, industriales y obras civiles.</h4>
+                </div>
+                <div class="col-md-4">
+                    <h1>
+                        <i class="fa-solid fa-brush"></i>
+                    </h1>
+                    <h4>Remodelaciones y adecuaciones a la medida de proyectos arquitectónicos.</h4>
+                </div>
+                <div class="col-md-4">
+                    <h1>
+                        <i class="fa-solid fa-pen-ruler"></i>
+                    </h1>
+                    <h4>Consultoria en materia de urbanismo y arquitectura.</h4>
+                </div>
+            </div> <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="/assets/images/construcc.jpg" class="img-fluid " alt="Responsive image">
+                    <div class="card-body"> <br>
+                        <h5 class="card-title">ESTRUCTURAS</h5>
+                        <hr>
+                        <p class="card-text">Construimos y montamos estructuras para la industria, bodegas y edificios,
+                            ofrecemos diseños seguros con material de alta calidad. Hacemos cálculos y diseños para cada
+                            uno de los proyectos.</p>
+                        <a href="#" class="btn btn-primary">Contactar</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="/assets/images/key.jpg" class="img-fluid " alt="Responsive image">
+                    <div class="card-body"> <br>
+                        <h5 class="card-title">RESIDENCIAL</h5>
+                        <hr>
+                        <p class="card-text">Desarrollamos y comercializamos conjuntos habitacionales en los segmentos
+                            de interés social, medio y residencial. Nos enfocamos en construir viviendas que cumplan con
+                            los altos estándares de más alta calidad, muchos de nuestros desarrollos ofrecen
+                            equipamiento escolar, deportivo y recreativo, así como amenidades que promueven la calidad
+                            de vida en comunidad.</p>
+                        <a href="#" class="btn btn-primary">Contactar</a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="/assets/images/street.jpg" class="img-fluid " alt="Responsive image">
+                    <div class="card-body"> <br>
+                        <h5 class="card-title">OBRAS CIVILES y URBANAS</h5>
+                        <hr>
+                        <p class="card-text">Empleamos aceros y concretos de alta resistencia, aditivos, fibras,
+                            selladores, material y equipo industrial para este tipo de trabajos. En general para la
+                            construcción de vialidades, accesos, estacionamientos, pisos industriales, por mencionar
+                            algunos tipos de urbanizaciones.</p>
+                        <a href="#" class="btn btn-primary">Contactar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div> <br>
+
+    <div class="contacto" id="contacto">
+        <div class="contactoImg">
+            <div class="container text-center">
+                <h1 class="titleContacto">CONTACTO</h1>
+            </div>
+        </div> <br> <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 contactoForm">
+                    <form action="/ajax/email" method="POST" onsubmit="return submitEmailForm(this);" id="myForm">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Nombre</label>
+                            <input name="name" type="text" class="form-control formInput" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Correo electrónico</label>
+                            <input name="email" type="text" class="form-control formInput" id="exampleInputEmail1"
+                                aria-describedby="emailHelp" placeholder="Correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Número celular</label>
+                            <input name="number" type="text" class="form-control formInput" id="exampleInputPassword1"
+                                placeholder="Número celular" required>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input formInput" id="exampleCheck1" required>
+                            <label class="form-check-label" for="exampleCheck1">Acepto política de
+                                privacidad</label>
+                        </div> <br>
+                        <button type="submit" class="btn btn-dark">Enviar</button>
+                    </form>
+                </div>
+               
+                <div class="col-md-6 text-center">
+                    <h3 class="nuestroTrabajoTitle">NUESTRO TRABAJO</h3> <hr>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="/assets/images/carr1.jpg" class="img-fluid" alt="Responsive image"> <br> <br>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="/assets/images/carr2.jpg" class="img-fluid" alt="Responsive image"> <br> <br>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <img src="/assets/images/carr3.jpg" class="img-fluid" alt="Responsive image">
+                            </div>
+                            <div class="col-md-6"></div>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
