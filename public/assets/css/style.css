@@ -17,6 +17,15 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+.nuestroT{
+    background-image: url("/assets/images/edificacion.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3%;
+    
+}
+
 .pointer {cursor: pointer;}
 .calidadDiv{
     height: 20rem;
@@ -46,9 +55,6 @@
 .expertosTitle{
     margin-top: 40%;
     text-shadow: 2px 2px #2f2d2d;
-}
-#footer-wrap{
-    margin-top: 5%;
 }
 .right-footer{
     margin-top: 7%;
